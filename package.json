@@ -1,0 +1,40 @@
+{
+    "name": "@storybook/react-readme-addon",
+    "version": "1.0.0",
+    "description": "A Storybook addon to add components readme into storybook panel",
+    "main": "dist/preset.js",
+    "files": [
+        "dist/**/*",
+        "README.md",
+        "*.js"
+    ],
+    "keywords": [
+        "storybook",
+        "addons"
+    ],
+    "author": "diiogocosta",
+    "license": "MIT",
+    "dependencies": {
+        "github-markdown-css": "^4.0.0",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1",
+        "react-markdown": "^5.0.3",
+        "remark-gfm": "^1.0.0"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.12.10",
+        "@babel/core": "^7.12.10",
+        "@babel/preset-env": "^7.12.11",
+        "@babel/preset-react": "^7.12.10",
+        "@storybook/addon-actions": "^6.1.14",
+        "@storybook/addon-essentials": "^6.1.14",
+        "@storybook/addon-links": "^6.1.14",
+        "@storybook/react": "^6.1.14",
+        "babel-loader": "^8.2.2"
+    },
+    "scripts": {
+        "storybook": "start-storybook -p 6006",
+        "build-storybook": "build-storybook",
+        "build": "babel ./src --out-dir ./dist"
+    }
+}
